@@ -75,11 +75,14 @@ class HeatMapPage extends StatelessWidget {
 
   final bool? showText;
 
+  final DateTime? focusDate;
+
   HeatMapPage({
     Key? key,
     required this.colorMode,
     required this.startDate,
     required this.endDate,
+    this.focusDate,
     this.size,
     this.fontSize,
     this.datasets,
@@ -117,6 +120,7 @@ class HeatMapPage extends StatelessWidget {
         endDate: datePos <= _dateDifferent - 7
             ? DateUtil.changeDay(startDate, datePos + 6)
             : endDate,
+        focusDate: focusDate,
         colorMode: colorMode,
         numDays: min(endDate.difference(_firstDay).inDays + 1, 7),
         size: size,

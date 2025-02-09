@@ -87,12 +87,15 @@ class HeatMapCalendar extends StatefulWidget {
   /// The double value of [HeatMapColorTip]'s tip container's size.
   final double? colorTipSize;
 
+  final DateTime? focusDate;
+
   const HeatMapCalendar({
     Key? key,
     required this.colorsets,
     this.colorMode = ColorMode.opacity,
     this.defaultColor,
     this.datasets,
+    this.focusDate,
     this.initDate,
     this.size = 42,
     this.fontSize,
@@ -225,6 +228,7 @@ class _HeatMapCalendar extends State<HeatMapCalendar> {
             textColor: widget.textColor,
             margin: widget.margin,
             datasets: widget.datasets,
+            focusDate: widget.focusDate,
             colorsets: widget.colorsets,
             borderRadius: widget.borderRadius,
             onClick: widget.onClick,

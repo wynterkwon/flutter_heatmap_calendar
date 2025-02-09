@@ -61,6 +61,8 @@ class HeatMapCalendarPage extends StatelessWidget {
   /// Paratmeter gives clicked [DateTime] value.
   final Function(DateTime)? onClick;
 
+  final DateTime? focusDate;
+
   HeatMapCalendarPage({
     Key? key,
     required this.baseDate,
@@ -72,6 +74,7 @@ class HeatMapCalendarPage extends StatelessWidget {
     this.textColor,
     this.margin,
     this.datasets,
+    this.focusDate,
     this.colorsets,
     this.borderRadius,
     this.onClick,
