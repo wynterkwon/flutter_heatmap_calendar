@@ -92,6 +92,7 @@ class HeatMapCalendarPage extends StatelessWidget {
           HeatMapCalendarRow(
             startDate: date.keys.first,
             endDate: date.values.first,
+            focusDate: focusDate,
             colorMode: colorMode,
             size: size,
             fontSize: fontSize,
