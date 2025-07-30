@@ -57,7 +57,7 @@ class HeatMapContainer extends StatelessWidget {
               color: selectedColor ?? Colors.transparent,
               border: Border.all(
                 color:
-                    Colors.brown.shade900, //focusColor ?? Colors.transparent,
+                   focusColor ?? Colors.transparent,
                 width: 3,
               ),
               borderRadius:
